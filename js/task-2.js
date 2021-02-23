@@ -16,17 +16,22 @@
 
     const createsListOfProducts = (products) => {
         let number = 0;
+
         while(number < products.length){
             const positionEl = document.createElement('li');
             positionEl.textContent = products[number];
             console.log(positionEl);
             number += 1;
-           ingredients.appendChild(positionEl);
+        //    ingredients.appendChild(positionEl);
+        const selectedById = document.querySelector('#ingredients');
+        selectedById.appendChild(positionEl);
         }
+        // const selectedById = document.querySelector('#ingredients');
+        // selectedById.appendChild(positionEl);
     //     const positionEl = document.createElement('li');
     // products.forEach(product => positionEl.textContent = product);
   }
-  
- 
+
+
   createsListOfProducts(ingredients);
   createsListOfProducts(a);
