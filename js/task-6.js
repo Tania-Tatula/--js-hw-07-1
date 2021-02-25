@@ -5,9 +5,9 @@ const handleInputFocus = (event) => {
     event.preventDefault();
 
     if(`${event.currentTarget.value.length}` === `${inputEl.getAttribute("data-length")}`){
-        return inputEl.setAttribute("id", "validation-input.valid"); 
+        return inputEl.setAttribute("class", "valid"); 
     }
-        return inputEl.setAttribute("id", "validation-input.invalid");
+        return inputEl.setAttribute("class", "invalid");
 
 }
 
