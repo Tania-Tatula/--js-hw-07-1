@@ -62,9 +62,11 @@ const createsListOfImg = (images) => {
    
     const liItems = images.forEach(imag => {
                              
-      return  selectedByIdGalleryEl.insertAdjacentHTML('beforeend', `<li class="imeges-list"><img class="images-items" src= ${imag.url} alt = ${imag.alt}></img></li>`);
-        
+      return  selectedByIdGalleryEl.insertAdjacentHTML('beforeend', `<li class="imeges-list"><img class="images-items" src = ${imag.url} 
+      alt = "${imag.alt}"></img></li>`);
+       
     })
+    
     }
 
 createsListOfImg(images);
